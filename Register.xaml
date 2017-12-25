@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="FYPFinal.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FYPFinal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel x:Name="Root" Background="Black">
+        <Image x:Name="BackgroundImage" Source="ms-appx:///Assets/RegisterBack.jpg"
+               RelativePanel.AlignBottomWithPanel="True"
+               RelativePanel.AlignLeftWithPanel="True"
+               RelativePanel.AlignRightWithPanel="True"
+               RelativePanel.AlignTopWithPanel="True"
+               Stretch="UniformToFill"/>
+        <Rectangle HorizontalAlignment="Left" Height="827" Stroke="Black" VerticalAlignment="Top" Width="927" Margin="276,57,-1201.667,-884" Opacity="0.3">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEEEEEE" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="76" TextWrapping="Wrap" Text="Register" VerticalAlignment="Top" Width="255" Margin="318,65,-503.667,-99.667" FontSize="50" Foreground="#FFFCFCFC" FontFamily="Rockwell"/>
+        <TextBlock HorizontalAlignment="Left" Height="87" TextWrapping="Wrap" Text="Please provide all the details below:" VerticalAlignment="Top" Width="649" Margin="318,141,-905,-206.667" FontSize="25" Foreground="White" FontFamily="Rockwell"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="Email Address" VerticalAlignment="Top" Width="171" Margin="318,204,-427,-218.667" Foreground="White" FontFamily="Rockwell" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="171" Margin="318,350,-427,-364.667" Foreground="White" FontFamily="Rockwell" FontSize="25" RenderTransformOrigin="0.799,-2.247"/>
+        <Button Content="Register" Click="Signup" HorizontalAlignment="Left" Height="85" VerticalAlignment="Top" Width="289" Margin="865,764,-1088.667,-815.667" FontFamily="Rockwell" FontSize="35" FontWeight="Bold" BorderBrush="#FFE61818" Background="#33C30A0A" Foreground="#FFF9F9F9"/>
+        <TextBlock Margin="514,795,-737,-828" Foreground="#FFF04B4B" SelectionHighlightColor="#FFE25353"><Hyperlink Click="termscondition" FontFamily="Rockwell" FontSize="25" Foreground="#FFE43434">Terms and Condition</Hyperlink></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="171" Margin="313,495,-422,-509.667" Foreground="White" FontFamily="Rockwell" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="Re-enter Password" VerticalAlignment="Top" Width="223" Margin="318,637,-479,-651.667" Foreground="White" FontFamily="Rockwell" FontSize="25"/>
+        <Image HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="80" Margin="318,240,-396.667,-305.667" Source="Assets/email.png"/>
+        <TextBox x:Name="EmailAddress" HorizontalAlignment="Left" Height="67" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="713" Margin="398,245,-1039.667,-278.667" FontSize="25">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFDFDFD" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Image HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="80" Margin="313,391,-391.667,-456.667" Source="Assets/user2.png"/>
+        <TextBox x:Name="Username" HorizontalAlignment="Left" Height="67" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="713" Margin="398,391,-1039.667,-424.667" FontSize="25">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFDFDFD" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Image HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="80" Margin="318,531,-396.667,-596.667" Source="Assets/password2.png"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="713" Margin="398,536,-1039.667,-569.667" FontSize="25">
+            <PasswordBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <Image HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="80" Margin="318,678,-396.667,-743.667" Source="Assets/password2.png" RenderTransformOrigin="0.581,2.872"/>
+        <PasswordBox x:Name="ConfirmPassword" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="713" Margin="398,673,-1039.667,-706.667" FontSize="25">
+            <PasswordBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <CheckBox x:Name="Agreement" Content="I agree on the" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="223" Margin="318,793,-241,-796.333" FontFamily="Rockwell" FontSize="25" Foreground="#FFE43434">
+            <CheckBox.Background>
+                <ImageBrush Stretch="Fill"/>
+            </CheckBox.Background>
+        </CheckBox>
+        <Button Content="Back" Click="Back" HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="233" Margin="946,76,-1114.454,-125.182" Background="#33B80E0E" FontFamily="Rockwell" FontSize="36" Foreground="White" BorderBrush="#FFEC0606"/>
+        <TextBlock x:Name="EmailError" HorizontalAlignment="Left" Height="37" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Margin="507,200,-1045.182,-217" Foreground="Red" FontFamily="Rockwell" FontSize="20"/>
+        <TextBlock x:Name="UsernameError" HorizontalAlignment="Left" Height="37" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Margin="504,347,-1042.182,-364" Foreground="Red" FontFamily="Rockwell" FontSize="30"/>
+        <TextBlock x:Name="PasswordError" HorizontalAlignment="Left" Height="37" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" Margin="505,495,-1043.182,-512" Foreground="Red" FontFamily="Rockwell" FontSize="30"/>
+        <TextBlock x:Name="ConPasswordError" HorizontalAlignment="Left" Height="37" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="536" Margin="565,632,-1039.182,-649" Foreground="Red" FontFamily="Rockwell" FontSize="30"/>
+    </RelativePanel>
+</Page>

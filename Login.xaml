@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="FYPFinal.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FYPFinal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel x:Name="Root" Background="Black">
+        <Image x:Name="BackgroundImage" Source="ms-appx:///Assets/logback.jpg"
+               RelativePanel.AlignBottomWithPanel="True"
+               RelativePanel.AlignLeftWithPanel="True"
+               RelativePanel.AlignRightWithPanel="True"
+               RelativePanel.AlignTopWithPanel="True"
+               Stretch="UniformToFill"/>
+        <Rectangle HorizontalAlignment="Left" Height="789" Stroke="Black" VerticalAlignment="Top" Width="927" Margin="267,87,-1192.667,-876" Opacity="0.2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF7D1D1" Offset="0"/>
+                    <GradientStop Color="#FFFBFBFB" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBlock HorizontalAlignment="Left" Height="76" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="255" Margin="318,100,-504,-143" FontSize="50" Foreground="#FFF7F7F7" FontFamily="Rockwell"/>
+        <TextBlock HorizontalAlignment="Left" Height="87" TextWrapping="Wrap" Text="Sign in by using your unique username and password." VerticalAlignment="Top" Width="649" Margin="318,176,-905,-241.667" FontSize="25" Foreground="#FFFDFDFD" FontFamily="Rockwell"/>
+        <Rectangle HorizontalAlignment="Left" Height="103" Stroke="Black" VerticalAlignment="Top" Width="98" Margin="350,346,-481,-447.667" Fill="#FF3462B4"/>
+        <Image HorizontalAlignment="Left" Height="103" VerticalAlignment="Top" Width="128" Margin="350,346,-452,-449" Source="Assets/user.png" RenderTransformOrigin="1.004,0.335"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="103" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="645" Margin="448,346,-1021.667,-415.667" FontSize="50">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="171" Margin="350,305,-459,-319.667" Foreground="White" FontFamily="Rockwell" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="171" Margin="350,492,-459,-506.667" Foreground="White" FontFamily="Rockwell" FontSize="25"/>
+        <Rectangle HorizontalAlignment="Left" Height="103" Stroke="Black" VerticalAlignment="Top" Width="98" Margin="350,530,-481,-447.667" Fill="#FF3462B4"/>
+        <Image HorizontalAlignment="Left" Height="103" VerticalAlignment="Top" Width="128" Margin="350,530,-452,-449" Source="Assets/password.png" RenderTransformOrigin="1.004,0.335"/>
+        <Button Content="Login" Click="Signin" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="334" Margin="712,746,-980.546,-804.273" FontFamily="Rockwell" FontSize="35" FontWeight="Bold" BorderBrush="#FF3AD421" Background="#331DE01D" Foreground="#FFFBFBFB"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="105" VerticalAlignment="Top" Width="645" Margin="448,528,-1029,-599.667" FontSize="50">
+            <PasswordBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </PasswordBox.Background>
+        </PasswordBox>
+        <TextBlock Margin="350,638,-573,-671" Foreground="#FFF04B4B" SelectionHighlightColor="#FFE25353"><Hyperlink Click="forgotpassword" FontFamily="Rockwell" FontSize="25">Forgot Password?</Hyperlink></TextBlock>
+        <Button Content="Back" Click="Back" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="321" Margin="393,748,-649.454,-807.182" Background="#33B80E0E" FontFamily="Rockwell" FontSize="36" Foreground="White" BorderBrush="#FFEC0606"/>
+    </RelativePanel>
+</Page>

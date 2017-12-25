@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="FYPFinal.generatereport"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FYPFinal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel x:Name="Root" Background="Black">
+        <Image x:Name="BackgroundImage" Source="ms-appx:///Assets/Login.jpg"
+               RelativePanel.AlignBottomWithPanel="True"
+               RelativePanel.AlignLeftWithPanel="True"
+               RelativePanel.AlignRightWithPanel="True"
+               RelativePanel.AlignTopWithPanel="True"
+               Stretch="UniformToFill"/>
+        <Border BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="0,0,0,0" Margin="-2,1,-1437,-135" Opacity="0.3" Background="White"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Text="Generate Formatted PDF Report" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Margin="461,68,-1168,-98" FontFamily="Rockwell" FontSize="36" Foreground="White"/>
+        <Button Content="Download Report" Click="DownloadReport" HorizontalAlignment="Left" Height="125" VerticalAlignment="Top" Width="547" Margin="448,341,-929.546,-432.364" Background="#3303FF00" FontFamily="Rockwell" FontSize="40" Foreground="White" IsEnabled="True"/>
+        <Button Content="View In Application" Click="ViewInApp" HorizontalAlignment="Left" Height="125" VerticalAlignment="Top" Width="554" Margin="442,545,-931.454,-636.364" Background="#330053FF" FontFamily="Rockwell" FontSize="40" Foreground="White" IsEnabled="True"/>
+        <Button Content="Back" Click="Back" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="264" Margin="64,813,-262.667,-870.667" Background="#33FF0000" FontFamily="Rockwell" FontSize="36" Foreground="White"/>
+        <TextBlock x:Name="username" HorizontalAlignment="Left" Height="54" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Margin="25,152,-259.182,-186"/>
+    </RelativePanel>
+</Page>
