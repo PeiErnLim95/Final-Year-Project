@@ -12,6 +12,8 @@ Study and Implementation of Content Analytics System on Social Media to Discover
 
 This is a desktop application that allow the user to collect tweets data from Twitter and conduct text analytics on the tweets content to discover if any cyberbully intentions consist inside the tweet content. If it is, a toast notification will pops and notify the user. All the discovered tweets will be stored inside the MongoDB database. 
 
+This project is developed in C# using Visual Studio 2017 with Microsoft SQL Server and MongoDB Server. Other tools used are mentioned inside the documentations. 
+
 ## System Requirement
 
 This is an UWP applications, which only works under Windows 10 operating system. 
