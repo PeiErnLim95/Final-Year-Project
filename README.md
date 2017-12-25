@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# Final Year Project 
 
-You can use the [editor on GitHub](https://github.com/PeiErnLim95/Final-Year-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is my final year project in my university.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Study and Implementation of Content Analytics System on Social Media to Discover Cyberbully Contents. 
 
-### Markdown
+## IMPORTANT
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### This project is still at its prototype phase therefore there is lack of feature and some may not work perfectly. 
 
-```markdown
-Syntax highlighted code block
+## About This Project
 
-# Header 1
-## Header 2
-### Header 3
+This is a desktop application that allow the user to collect tweets data from Twitter and conduct text analytics on the tweets content to discover if any cyberbully intentions consist inside the tweet content. If it is, a toast notification will pops and notify the user. All the discovered tweets will be stored inside the MongoDB database. 
 
-- Bulleted
-- List
+## System Requirement
 
-1. Numbered
-2. List
+This is an UWP applications, which only works under Windows 10 operating system. 
 
-**Bold** and _Italic_ and `Code` text
+Make sure the operating system had updated to Fall Creators Update 2017. (Windows 10 Version 1709)
 
-[Link](url) and ![Image](src)
-```
+MongoDB Server
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Microsoft SQL Server and Database
 
-### Jekyll Themes
+Internet Connection Required
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PeiErnLim95/Final-Year-Project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## WARNING
 
-### Support or Contact
+All databases are currently running locally, it was not deployed online nor the application itself.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This repository served as a project store room for the author. 
+
+Thank you. 
